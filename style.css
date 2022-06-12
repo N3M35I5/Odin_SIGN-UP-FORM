@@ -58,7 +58,7 @@ table {
 /*My CSS*/
 
 body{
-    height: 100%;
+    height: 100vh;
     display: flex;
 }
 a{
@@ -120,14 +120,25 @@ a:hover {
 }
 .mid{
     background-color: white;
-    padding: 5% 30% 5% 5% ;
+    padding: 5% 30% 3% 5% ;
     gap: 10px;
 }
 .mid>p{
     font-size: larger;
     font-weight: bold;
 }
-
+input:focus{
+    outline: none !important;
+    border: 2px solid #5388b3;
+}
+input:invalid{
+    outline: none !important;
+    border: 2px solid red;
+}
+.errorClass{
+    outline: none !important;
+    border: 2px solid red;
+}
 .rows{
     display: flex;
     align-items: center;
@@ -141,7 +152,7 @@ a:hover {
     gap: 5px;
 }
 .bottom{
-    padding: 5% 30% 5% 5% ;
+    padding: 3% 30% 5% 5% ;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -149,7 +160,7 @@ a:hover {
 .bottom>button{
     width: fit-content;
     padding: 10px 20px 10px 20px;
-    background-color: #2ba12f;
+    background-color: #596D48;
     color: white;
     border-style: none;
     border-radius: 5px;
