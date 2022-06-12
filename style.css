@@ -101,7 +101,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: rgb(227, 230, 228);
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
     font-family: 'Open Sans', sans-serif;
 }
 .top,.mid,.bottom{
@@ -142,6 +142,22 @@ a:hover {
 }
 .bottom{
     padding: 5% 30% 5% 5% ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
+.bottom>button{
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: #2ba12f;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+.bottom>p>a{
+    color: black;
+}
+.bottom>p>a:hover{
+    color: hotpink;
+}
 
