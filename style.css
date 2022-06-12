@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face {
+    font-family: "norseBold";
+    src: url("./fonts/Norse-Bold.otf");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,13 +57,8 @@ table {
 
 /*My CSS*/
 
-@font-face {
-    font-family: "norseBold";
-    src: url("./fonts/Norse-Bold.otf");
-}
-
 body{
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 a{
@@ -78,20 +80,15 @@ a:hover {
 }
 .logoSpace{
     margin-top: 30%;
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.logoopc{
-    opacity: 1;
 }
 #logo{
     width: 80px;
 }
 #odin{
-    opacity: 1;
     font-family: "norseBold";
     font-size: 80px;
 }
@@ -103,9 +100,48 @@ a:hover {
     width: 65%;
     display: flex;
     flex-direction: column;
-    background-color: wheat;
+    background-color: rgb(227, 230, 228);
+    padding: 10% 0 0 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .top,.mid,.bottom{
     display: flex;
     flex-direction: column;
 }
+
+.top{
+    padding-left: 5%;
+    font-weight: bolder;
+    font-size: 1.45rem;
+    gap: 10px;
+    padding-right: 20%;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.mid{
+    background-color: white;
+    padding: 5% 30% 5% 5% ;
+    gap: 10px;
+}
+.mid>p{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+    font-size: smaller;
+}
+.cols{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bottom{
+    padding: 5% 30% 5% 5% ;
+}
+
+
